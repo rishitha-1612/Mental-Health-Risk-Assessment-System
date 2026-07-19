@@ -738,6 +738,10 @@ if len(np.unique(db_labels[valid])) > 1:
 else:
 
     print("DBSCAN produced insufficient clusters for silhouette score.")
+df.to_csv(
+    "dataset_with_anomalies.csv",
+    index=False
+)
 
 """cluster visualization"""
 
